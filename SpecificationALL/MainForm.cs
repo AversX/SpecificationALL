@@ -42,13 +42,13 @@ namespace SpecificationPack
         {
             Units = new List<Unit>();
             if (specAndrTBox.Text != "" && colNameTBox.Text != "")
-                Units.AddRange(loadSpecAndr(specAndrTBox.Text, colNameTBox.Text));
+                Units.AddRange(LoadSpecAndr(specAndrTBox.Text, colNameTBox.Text));
             if (specAlexTBox.Text!="")
                 Units.AddRange(loadSpecAlex(specAlexTBox.Text));
             if (specAlexAvrTBox.Text != "")
-                Units.AddRange(loadSpecAlexAvr(specAlexAvrTBox.Text));
+                Units.AddRange(LoadSpecAlexAvr(specAlexAvrTBox.Text));
             if (specVladTBox.Text != "")
-                Units.AddRange(loadSpecVlad(specVladTBox.Text));
+                Units.AddRange(LoadSpecVlad(specVladTBox.Text));
             Units = consolidate(Units);
             uploadData();
         }
@@ -114,14 +114,14 @@ namespace SpecificationPack
                     unit.Name = dataSet.Tables[0].Rows[row][2].ToString().Trim();
                     unit.Manufacture = dataSet.Tables[0].Rows[row][3].ToString().Trim();
                     unit.Num = double.Parse(dataSet.Tables[0].Rows[row][6].ToString().Trim());
-                    if (unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture=="HELUKABEL") { unit.Num = unit.Num * 10; unit.Measure = "м"; }
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture=="HELUKABEL") && SpecAlexHelukabel.Checked) { unit.Num = unit.Num * 10; unit.Measure = "м"; }
                     units.Add(unit);
                 }
             }
             return units;
         }
 
-        private List<Unit> loadSpecAlexAvr(string path)
+        private List<Unit> LoadSpecAlexAvr(string path)
         {
             List<Unit> units = new List<Unit>();
             DataSet dataSet = new DataSet("EXCEL");
@@ -164,14 +164,14 @@ namespace SpecificationPack
                         }
                         else { unit.Num = double.Parse(dataSet.Tables[0].Rows[row][4].ToString().Trim()); unit.Measure = "шт"; }
                     else unit.Num = 0;
-                    if (unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") { unit.Num = unit.Num * 10; unit.Measure = "м"; }
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecAlexAvrHelukabel.Checked) { unit.Num = unit.Num * 10; unit.Measure = "м"; }
                     units.Add(unit);
                 }
             }
             return units;
         }
 
-        private List<Unit> loadSpecAndr(string path, string colName)
+        private List<Unit> LoadSpecAndr(string path, string colName)
         {
             List<Unit> units = new List<Unit>();
             DataSet dataSet = new DataSet("EXCEL");
@@ -204,7 +204,7 @@ namespace SpecificationPack
                     unit.Measure = dataSet.Tables[0].Rows[row][4].ToString().Trim();
                     int colNum = ExcelColumnNameToNumber(colName) - 1;
                     unit.Num = double.Parse(dataSet.Tables[0].Rows[row][colNum].ToString().Trim());
-                    //if (unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") unit.Num = unit.Num * 10;
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecAndrHelukabel.Checked) unit.Num = unit.Num * 10;
                     if (unit.Num!=0)
                         units.Add(unit);
                 }
@@ -212,7 +212,7 @@ namespace SpecificationPack
             return units;
         }
 
-        private List<Unit> loadSpecVlad(string path)
+        private List<Unit> LoadSpecVlad(string path)
         {
             List<Unit> units = new List<Unit>();
             DataSet dataSet = new DataSet("EXCEL");
@@ -238,7 +238,7 @@ namespace SpecificationPack
                     unit.Manufacture = dataSet.Tables[0].Rows[row][7].ToString().Trim();
                     unit.Measure = dataSet.Tables[0].Rows[row][6].ToString().Trim();
                     double d = double.Parse(dataSet.Tables[0].Rows[row][5].ToString().Trim());
-                    if (unit.Manufacture.ToUpper() == "HELUKABEL" || unit.Manufacture == "Helukabel") d = d * 10;
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecVladHelukabel.Checked) d = d * 10;
                     if (unit.Code.ToUpper() == "1SDA066676R1" || unit.Manufacture == "1SDA066676R1") unit.Measure = "к";
                     unit.Num = d;
                     units.Add(unit);

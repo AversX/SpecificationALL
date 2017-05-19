@@ -44,6 +44,10 @@
             this.clrBtn = new System.Windows.Forms.Button();
             this.colNameTBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.SpecAlexHelukabel = new System.Windows.Forms.CheckBox();
+            this.SpecAlexAvrHelukabel = new System.Windows.Forms.CheckBox();
+            this.SpecAndrHelukabel = new System.Windows.Forms.CheckBox();
+            this.SpecVladHelukabel = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -67,7 +71,7 @@
             // 
             // formBtn
             // 
-            this.formBtn.Location = new System.Drawing.Point(181, 460);
+            this.formBtn.Location = new System.Drawing.Point(181, 501);
             this.formBtn.Name = "formBtn";
             this.formBtn.Size = new System.Drawing.Size(118, 34);
             this.formBtn.TabIndex = 3;
@@ -97,7 +101,7 @@
             // 
             // addSpec4Btn
             // 
-            this.addSpec4Btn.Location = new System.Drawing.Point(200, 415);
+            this.addSpec4Btn.Location = new System.Drawing.Point(200, 456);
             this.addSpec4Btn.Name = "addSpec4Btn";
             this.addSpec4Btn.Size = new System.Drawing.Size(99, 36);
             this.addSpec4Btn.TabIndex = 7;
@@ -108,7 +112,7 @@
             // specVladTBox
             // 
             this.specVladTBox.AllowDrop = true;
-            this.specVladTBox.Location = new System.Drawing.Point(15, 371);
+            this.specVladTBox.Location = new System.Drawing.Point(16, 412);
             this.specVladTBox.Multiline = true;
             this.specVladTBox.Name = "specVladTBox";
             this.specVladTBox.Size = new System.Drawing.Size(281, 38);
@@ -170,7 +174,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 355);
+            this.label4.Location = new System.Drawing.Point(13, 396);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 13);
             this.label4.TabIndex = 1;
@@ -178,7 +182,7 @@
             // 
             // clrBtn
             // 
-            this.clrBtn.Location = new System.Drawing.Point(12, 458);
+            this.clrBtn.Location = new System.Drawing.Point(12, 499);
             this.clrBtn.Name = "clrBtn";
             this.clrBtn.Size = new System.Drawing.Size(99, 36);
             this.clrBtn.TabIndex = 5;
@@ -202,11 +206,59 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Буква столбца (лат.)";
             // 
+            // SpecAlexHelukabel
+            // 
+            this.SpecAlexHelukabel.AutoSize = true;
+            this.SpecAlexHelukabel.Checked = true;
+            this.SpecAlexHelukabel.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SpecAlexHelukabel.Location = new System.Drawing.Point(12, 70);
+            this.SpecAlexHelukabel.Name = "SpecAlexHelukabel";
+            this.SpecAlexHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecAlexHelukabel.TabIndex = 11;
+            this.SpecAlexHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecAlexHelukabel.UseVisualStyleBackColor = true;
+            // 
+            // SpecAlexAvrHelukabel
+            // 
+            this.SpecAlexAvrHelukabel.AutoSize = true;
+            this.SpecAlexAvrHelukabel.Checked = true;
+            this.SpecAlexAvrHelukabel.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SpecAlexAvrHelukabel.Location = new System.Drawing.Point(12, 187);
+            this.SpecAlexAvrHelukabel.Name = "SpecAlexAvrHelukabel";
+            this.SpecAlexAvrHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecAlexAvrHelukabel.TabIndex = 12;
+            this.SpecAlexAvrHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecAlexAvrHelukabel.UseVisualStyleBackColor = true;
+            // 
+            // SpecAndrHelukabel
+            // 
+            this.SpecAndrHelukabel.AutoSize = true;
+            this.SpecAndrHelukabel.Location = new System.Drawing.Point(12, 355);
+            this.SpecAndrHelukabel.Name = "SpecAndrHelukabel";
+            this.SpecAndrHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecAndrHelukabel.TabIndex = 13;
+            this.SpecAndrHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecAndrHelukabel.UseVisualStyleBackColor = true;
+            // 
+            // SpecVladHelukabel
+            // 
+            this.SpecVladHelukabel.AutoSize = true;
+            this.SpecVladHelukabel.Location = new System.Drawing.Point(12, 456);
+            this.SpecVladHelukabel.Name = "SpecVladHelukabel";
+            this.SpecVladHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecVladHelukabel.TabIndex = 14;
+            this.SpecVladHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecVladHelukabel.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 498);
+            this.ClientSize = new System.Drawing.Size(307, 547);
+            this.Controls.Add(this.SpecVladHelukabel);
+            this.Controls.Add(this.SpecAndrHelukabel);
+            this.Controls.Add(this.SpecAlexAvrHelukabel);
+            this.Controls.Add(this.SpecAlexHelukabel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.colNameTBox);
             this.Controls.Add(this.specAndrTBox);
@@ -248,6 +300,10 @@
         private System.Windows.Forms.Button clrBtn;
         private System.Windows.Forms.TextBox colNameTBox;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox SpecAlexHelukabel;
+        private System.Windows.Forms.CheckBox SpecAlexAvrHelukabel;
+        private System.Windows.Forms.CheckBox SpecAndrHelukabel;
+        private System.Windows.Forms.CheckBox SpecVladHelukabel;
     }
 }
 
