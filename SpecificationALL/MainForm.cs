@@ -114,7 +114,7 @@ namespace SpecificationPack
                     unit.Name = dataSet.Tables[0].Rows[row][2].ToString().Trim();
                     unit.Manufacture = dataSet.Tables[0].Rows[row][3].ToString().Trim();
                     unit.Num = double.Parse(dataSet.Tables[0].Rows[row][6].ToString().Trim());
-                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture=="HELUKABEL") && SpecAlexHelukabel.Checked) { unit.Num = unit.Num * 10; unit.Measure = "м"; }
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture=="HELUKABEL") && SpecAlexHelukabel.Checked) { unit.Num = unit.Num * int.Parse(SpecAlexHelukabelTxt.Text); unit.Measure = "м"; }
                     units.Add(unit);
                 }
             }
@@ -164,7 +164,7 @@ namespace SpecificationPack
                         }
                         else { unit.Num = double.Parse(dataSet.Tables[0].Rows[row][4].ToString().Trim()); unit.Measure = "шт"; }
                     else unit.Num = 0;
-                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecAlexAvrHelukabel.Checked) { unit.Num = unit.Num * 10; unit.Measure = "м"; }
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecAlexAvrHelukabel.Checked) { unit.Num = unit.Num * int.Parse(SpecAlexAvrHelukabelTxt.Text); unit.Measure = "м"; }
                     units.Add(unit);
                 }
             }
@@ -204,7 +204,7 @@ namespace SpecificationPack
                     unit.Measure = dataSet.Tables[0].Rows[row][4].ToString().Trim();
                     int colNum = ExcelColumnNameToNumber(colName) - 1;
                     unit.Num = double.Parse(dataSet.Tables[0].Rows[row][colNum].ToString().Trim());
-                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecAndrHelukabel.Checked) unit.Num = unit.Num * 10;
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecAndrHelukabel.Checked) unit.Num = unit.Num * int.Parse(SpecAndrHelukabelTxt.Text);
                     if (unit.Num!=0)
                         units.Add(unit);
                 }
@@ -238,7 +238,7 @@ namespace SpecificationPack
                     unit.Manufacture = dataSet.Tables[0].Rows[row][7].ToString().Trim();
                     unit.Measure = dataSet.Tables[0].Rows[row][6].ToString().Trim();
                     double d = double.Parse(dataSet.Tables[0].Rows[row][5].ToString().Trim());
-                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecVladHelukabel.Checked) d = d * 10;
+                    if ((unit.Manufacture.ToUpper() == "Helukabel" || unit.Manufacture == "HELUKABEL") && SpecVladHelukabel.Checked) d = d * int.Parse(SpecVladHelukabelTxt.Text); ;
                     if (unit.Code.ToUpper() == "1SDA066676R1" || unit.Manufacture == "1SDA066676R1") unit.Measure = "к";
                     unit.Num = d;
                     units.Add(unit);
@@ -404,6 +404,10 @@ namespace SpecificationPack
             }
         }
 
+        private void SpecAlexHelukabelTxt_TextChanged(object sender, EventArgs e)
+        {
+            //this.
+        }
     }
 
     class NaturalStringComparer : IComparer<String>

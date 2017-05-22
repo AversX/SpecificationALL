@@ -48,12 +48,18 @@
             this.SpecAlexAvrHelukabel = new System.Windows.Forms.CheckBox();
             this.SpecAndrHelukabel = new System.Windows.Forms.CheckBox();
             this.SpecVladHelukabel = new System.Windows.Forms.CheckBox();
+            this.SpecAlexHelukabelTxt = new System.Windows.Forms.TextBox();
+            this.SpecAlexAvrHelukabelTxt = new System.Windows.Forms.TextBox();
+            this.SpecAndrHelukabelTxt = new System.Windows.Forms.TextBox();
+            this.SpecVladHelukabelTxt = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 9);
+            this.label1.Location = new System.Drawing.Point(11, 14);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(128, 13);
             this.label1.TabIndex = 1;
@@ -61,7 +67,9 @@
             // 
             // addSpec1Btn
             // 
-            this.addSpec1Btn.Location = new System.Drawing.Point(197, 69);
+            this.addSpec1Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSpec1Btn.Location = new System.Drawing.Point(197, 74);
             this.addSpec1Btn.Name = "addSpec1Btn";
             this.addSpec1Btn.Size = new System.Drawing.Size(99, 36);
             this.addSpec1Btn.TabIndex = 2;
@@ -71,7 +79,9 @@
             // 
             // formBtn
             // 
-            this.formBtn.Location = new System.Drawing.Point(181, 501);
+            this.formBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.formBtn.Location = new System.Drawing.Point(181, 506);
             this.formBtn.Name = "formBtn";
             this.formBtn.Size = new System.Drawing.Size(118, 34);
             this.formBtn.TabIndex = 3;
@@ -81,7 +91,9 @@
             // 
             // addSpec2Btn
             // 
-            this.addSpec2Btn.Location = new System.Drawing.Point(200, 187);
+            this.addSpec2Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSpec2Btn.Location = new System.Drawing.Point(200, 192);
             this.addSpec2Btn.Name = "addSpec2Btn";
             this.addSpec2Btn.Size = new System.Drawing.Size(99, 36);
             this.addSpec2Btn.TabIndex = 7;
@@ -91,7 +103,9 @@
             // 
             // addSpec3Btn
             // 
-            this.addSpec3Btn.Location = new System.Drawing.Point(199, 302);
+            this.addSpec3Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSpec3Btn.Location = new System.Drawing.Point(199, 307);
             this.addSpec3Btn.Name = "addSpec3Btn";
             this.addSpec3Btn.Size = new System.Drawing.Size(99, 36);
             this.addSpec3Btn.TabIndex = 7;
@@ -101,7 +115,9 @@
             // 
             // addSpec4Btn
             // 
-            this.addSpec4Btn.Location = new System.Drawing.Point(200, 456);
+            this.addSpec4Btn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.addSpec4Btn.Location = new System.Drawing.Point(200, 461);
             this.addSpec4Btn.Name = "addSpec4Btn";
             this.addSpec4Btn.Size = new System.Drawing.Size(99, 36);
             this.addSpec4Btn.TabIndex = 7;
@@ -112,7 +128,9 @@
             // specVladTBox
             // 
             this.specVladTBox.AllowDrop = true;
-            this.specVladTBox.Location = new System.Drawing.Point(16, 412);
+            this.specVladTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.specVladTBox.Location = new System.Drawing.Point(16, 417);
             this.specVladTBox.Multiline = true;
             this.specVladTBox.Name = "specVladTBox";
             this.specVladTBox.Size = new System.Drawing.Size(281, 38);
@@ -123,7 +141,9 @@
             // specAlexAvrTBox
             // 
             this.specAlexAvrTBox.AllowDrop = true;
-            this.specAlexAvrTBox.Location = new System.Drawing.Point(16, 143);
+            this.specAlexAvrTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.specAlexAvrTBox.Location = new System.Drawing.Point(16, 148);
             this.specAlexAvrTBox.Multiline = true;
             this.specAlexAvrTBox.Name = "specAlexAvrTBox";
             this.specAlexAvrTBox.Size = new System.Drawing.Size(281, 38);
@@ -134,7 +154,9 @@
             // specAlexTBox
             // 
             this.specAlexTBox.AllowDrop = true;
-            this.specAlexTBox.Location = new System.Drawing.Point(13, 25);
+            this.specAlexTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.specAlexTBox.Location = new System.Drawing.Point(13, 30);
             this.specAlexTBox.Multiline = true;
             this.specAlexTBox.Name = "specAlexTBox";
             this.specAlexTBox.Size = new System.Drawing.Size(281, 38);
@@ -145,7 +167,9 @@
             // specAndrTBox
             // 
             this.specAndrTBox.AllowDrop = true;
-            this.specAndrTBox.Location = new System.Drawing.Point(15, 258);
+            this.specAndrTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.specAndrTBox.Location = new System.Drawing.Point(15, 263);
             this.specAndrTBox.Multiline = true;
             this.specAndrTBox.Name = "specAndrTBox";
             this.specAndrTBox.Size = new System.Drawing.Size(281, 38);
@@ -155,8 +179,10 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 127);
+            this.label2.Location = new System.Drawing.Point(12, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(155, 13);
             this.label2.TabIndex = 1;
@@ -164,8 +190,10 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 242);
+            this.label3.Location = new System.Drawing.Point(12, 247);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 13);
             this.label3.TabIndex = 1;
@@ -173,8 +201,10 @@
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 396);
+            this.label4.Location = new System.Drawing.Point(13, 401);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 13);
             this.label4.TabIndex = 1;
@@ -182,7 +212,9 @@
             // 
             // clrBtn
             // 
-            this.clrBtn.Location = new System.Drawing.Point(12, 499);
+            this.clrBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.clrBtn.Location = new System.Drawing.Point(12, 504);
             this.clrBtn.Name = "clrBtn";
             this.clrBtn.Size = new System.Drawing.Size(99, 36);
             this.clrBtn.TabIndex = 5;
@@ -192,15 +224,19 @@
             // 
             // colNameTBox
             // 
-            this.colNameTBox.Location = new System.Drawing.Point(14, 318);
+            this.colNameTBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.colNameTBox.Location = new System.Drawing.Point(14, 323);
             this.colNameTBox.Name = "colNameTBox";
             this.colNameTBox.Size = new System.Drawing.Size(36, 20);
             this.colNameTBox.TabIndex = 9;
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 302);
+            this.label5.Location = new System.Drawing.Point(15, 307);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(110, 13);
             this.label5.TabIndex = 10;
@@ -208,53 +244,106 @@
             // 
             // SpecAlexHelukabel
             // 
+            this.SpecAlexHelukabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SpecAlexHelukabel.AutoSize = true;
             this.SpecAlexHelukabel.Checked = true;
             this.SpecAlexHelukabel.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SpecAlexHelukabel.Location = new System.Drawing.Point(12, 70);
+            this.SpecAlexHelukabel.Location = new System.Drawing.Point(12, 76);
             this.SpecAlexHelukabel.Name = "SpecAlexHelukabel";
-            this.SpecAlexHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecAlexHelukabel.Size = new System.Drawing.Size(152, 17);
             this.SpecAlexHelukabel.TabIndex = 11;
-            this.SpecAlexHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecAlexHelukabel.Text = "Домножать Helukabel на";
             this.SpecAlexHelukabel.UseVisualStyleBackColor = true;
             // 
             // SpecAlexAvrHelukabel
             // 
+            this.SpecAlexAvrHelukabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SpecAlexAvrHelukabel.AutoSize = true;
             this.SpecAlexAvrHelukabel.Checked = true;
             this.SpecAlexAvrHelukabel.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SpecAlexAvrHelukabel.Location = new System.Drawing.Point(12, 187);
+            this.SpecAlexAvrHelukabel.Location = new System.Drawing.Point(12, 194);
             this.SpecAlexAvrHelukabel.Name = "SpecAlexAvrHelukabel";
-            this.SpecAlexAvrHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecAlexAvrHelukabel.Size = new System.Drawing.Size(152, 17);
             this.SpecAlexAvrHelukabel.TabIndex = 12;
-            this.SpecAlexAvrHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecAlexAvrHelukabel.Text = "Домножать Helukabel на";
             this.SpecAlexAvrHelukabel.UseVisualStyleBackColor = true;
             // 
             // SpecAndrHelukabel
             // 
+            this.SpecAndrHelukabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SpecAndrHelukabel.AutoSize = true;
-            this.SpecAndrHelukabel.Location = new System.Drawing.Point(12, 355);
+            this.SpecAndrHelukabel.Location = new System.Drawing.Point(15, 363);
             this.SpecAndrHelukabel.Name = "SpecAndrHelukabel";
-            this.SpecAndrHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecAndrHelukabel.Size = new System.Drawing.Size(152, 17);
             this.SpecAndrHelukabel.TabIndex = 13;
-            this.SpecAndrHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecAndrHelukabel.Text = "Домножать Helukabel на";
             this.SpecAndrHelukabel.UseVisualStyleBackColor = true;
             // 
             // SpecVladHelukabel
             // 
+            this.SpecVladHelukabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.SpecVladHelukabel.AutoSize = true;
-            this.SpecVladHelukabel.Location = new System.Drawing.Point(12, 456);
+            this.SpecVladHelukabel.Location = new System.Drawing.Point(12, 461);
             this.SpecVladHelukabel.Name = "SpecVladHelukabel";
-            this.SpecVladHelukabel.Size = new System.Drawing.Size(167, 17);
+            this.SpecVladHelukabel.Size = new System.Drawing.Size(152, 17);
             this.SpecVladHelukabel.TabIndex = 14;
-            this.SpecVladHelukabel.Text = "Домножать Helukabel на 10";
+            this.SpecVladHelukabel.Text = "Домножать Helukabel на";
             this.SpecVladHelukabel.UseVisualStyleBackColor = true;
+            // 
+            // SpecAlexHelukabelTxt
+            // 
+            this.SpecAlexHelukabelTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SpecAlexHelukabelTxt.Location = new System.Drawing.Point(164, 74);
+            this.SpecAlexHelukabelTxt.Name = "SpecAlexHelukabelTxt";
+            this.SpecAlexHelukabelTxt.Size = new System.Drawing.Size(27, 20);
+            this.SpecAlexHelukabelTxt.TabIndex = 15;
+            this.SpecAlexHelukabelTxt.Text = "3";
+            this.SpecAlexHelukabelTxt.TextChanged += new System.EventHandler(this.SpecAlexHelukabelTxt_TextChanged);
+            // 
+            // SpecAlexAvrHelukabelTxt
+            // 
+            this.SpecAlexAvrHelukabelTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SpecAlexAvrHelukabelTxt.Location = new System.Drawing.Point(164, 192);
+            this.SpecAlexAvrHelukabelTxt.Name = "SpecAlexAvrHelukabelTxt";
+            this.SpecAlexAvrHelukabelTxt.Size = new System.Drawing.Size(27, 20);
+            this.SpecAlexAvrHelukabelTxt.TabIndex = 16;
+            this.SpecAlexAvrHelukabelTxt.Text = "3";
+            // 
+            // SpecAndrHelukabelTxt
+            // 
+            this.SpecAndrHelukabelTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SpecAndrHelukabelTxt.Location = new System.Drawing.Point(164, 361);
+            this.SpecAndrHelukabelTxt.Name = "SpecAndrHelukabelTxt";
+            this.SpecAndrHelukabelTxt.Size = new System.Drawing.Size(27, 20);
+            this.SpecAndrHelukabelTxt.TabIndex = 17;
+            this.SpecAndrHelukabelTxt.Text = "10";
+            // 
+            // SpecVladHelukabelTxt
+            // 
+            this.SpecVladHelukabelTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.SpecVladHelukabelTxt.Location = new System.Drawing.Point(164, 459);
+            this.SpecVladHelukabelTxt.Name = "SpecVladHelukabelTxt";
+            this.SpecVladHelukabelTxt.Size = new System.Drawing.Size(27, 20);
+            this.SpecVladHelukabelTxt.TabIndex = 18;
+            this.SpecVladHelukabelTxt.Text = "10";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(307, 547);
+            this.ClientSize = new System.Drawing.Size(307, 552);
+            this.Controls.Add(this.SpecVladHelukabelTxt);
+            this.Controls.Add(this.SpecAndrHelukabelTxt);
+            this.Controls.Add(this.SpecAlexAvrHelukabelTxt);
+            this.Controls.Add(this.SpecAlexHelukabelTxt);
             this.Controls.Add(this.SpecVladHelukabel);
             this.Controls.Add(this.SpecAndrHelukabel);
             this.Controls.Add(this.SpecAlexAvrHelukabel);
@@ -304,6 +393,10 @@
         private System.Windows.Forms.CheckBox SpecAlexAvrHelukabel;
         private System.Windows.Forms.CheckBox SpecAndrHelukabel;
         private System.Windows.Forms.CheckBox SpecVladHelukabel;
+        private System.Windows.Forms.TextBox SpecAlexHelukabelTxt;
+        private System.Windows.Forms.TextBox SpecAlexAvrHelukabelTxt;
+        private System.Windows.Forms.TextBox SpecAndrHelukabelTxt;
+        private System.Windows.Forms.TextBox SpecVladHelukabelTxt;
     }
 }
 

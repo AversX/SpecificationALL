@@ -7,8 +7,8 @@
     <ProjectGuid>{8452AB0E-DAED-41C7-8A3E-A6104C140376}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SpecificationPack</RootNamespace>
-    <AssemblyName>SpecificationPack</AssemblyName>
+    <RootNamespace>SpecificationAll</RootNamespace>
+    <AssemblyName>SpecificationAll</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
